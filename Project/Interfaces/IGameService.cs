@@ -46,7 +46,7 @@ namespace CastleGrimtol.Project.Interfaces
         void Inventory();
 
         //Display the CurrentRoom Description, Exits, and Items
-        void Look();
+        void Search();
 
         #endregion
     }
