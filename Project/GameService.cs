@@ -5,7 +5,7 @@ using CastleGrimtol.Project.Models;
 
 namespace CastleGrimtol.Project
 {
-    public class GameService
+    public class GameService : IGameService
     {
         IRoom CurrentRoom { get; set; }
         Player CurrentPlayer { get; set; }
@@ -32,7 +32,7 @@ namespace CastleGrimtol.Project
 
         public void Quit()
         {
-
+            Environment.Exit(0);
         }
 
         public void Reset()
@@ -73,7 +73,7 @@ namespace CastleGrimtol.Project
                                                                                                                      
                                                                                                                      
                                                                                                                      ");
-
+            playerName = Console.ReadLine("");
 
 
         }
