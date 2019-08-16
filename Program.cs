@@ -12,7 +12,9 @@ namespace CastleGrimtol
             Console.Clear();
             GameService game = new GameService();
             game.StartGame();
-            game.Run();
+            game.YouDied();
+            game.VictoryAchieved();
+            // game.Run();
 
 
 
