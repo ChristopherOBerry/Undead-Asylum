@@ -7,38 +7,33 @@ namespace CastleGrimtol.Project.Models
 {
     public class Room : IRoom
     {
-        string IRoom.Name { get; set; }
-        string IRoom.Description { get; set; }
-        List<Item> IRoom.Items { get; set; }
-        Dictionary<string, IRoom> IRoom.Exits { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public List<Item> Items { get; set; }
+        public Dictionary<string, IRoom> Exits { get; set; }
 
-        public void Exits (string direction, Room roomObject)
+
+        public IRoom Movement(string option)
         {
-            IRoom.Exits.Add(direction, roomObject);
-        }
-        public Room Go(string direction){
-            if(Exits.ContainsKey(direction)){
-                Console.WriteLine("Opening Door");
-                Thread.Sleep(1000);
-                Console.Clear();
-                return Directions[direction];
+            if (Exits.ContainsKey(option))
+            {
+                return Exits[option];
             }
-            Console.WriteLine("Can't go that way");
+            Console.WriteLine("You can't go that way.");
             return this;
         }
-        public Room(string name)
+
+        //constructor
+        public Room(string name, string description)
         {
             Name = name;
-            Directions = new Dictionary<string, Room>();        
-        }
-        public void PrintDirections(){
-            foreach(var room in Directions)
-            {
-                Console.Write(room.Key + ", ");
+            Description = description;
+            Items = new List<Item>();
+            Exits = new Dictionary<string, IRoom>();
 
-            }
-            Console.WriteLine("");
+
         }
-        
+
+
     }
 }
