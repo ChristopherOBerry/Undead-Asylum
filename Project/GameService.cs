@@ -229,10 +229,11 @@ Well, now you know. And I can die with hope in my heart. Oh, one more thing. Her
 An Estus Flask, an Undead favourite. Oh, and this. Now I must bid farewell. 
 I would hate to harm you after death. So, go now... And thank you.");
             Room dropdown = new Room("Dropdown to Stray Demon", @"
-Ahead lies a gate of fog. You reach out through it, and suddenly, the fog disappates. Below is the room with the giant demon from before.
-You dropdown with a downward thrust of your weapon, laying your sword straight through the demon's skull. It wails in pain. While it is staggered, you deliver several slashes to its legs and tail, until it lives no more. The corpse evaporates in a giant flash of light.
-You suddenly feel stronger. Where the corpse once lay, you see a key glimmering on the ground. Ahead is door with the giant lock.");
+A few Hollows attempt to ambush you, but you swipe through them with your sword.
+Ahead lies a gate of fog. You reach out through it, and suddenly, the fog disappates. Below to your left is the room with the giant demon from before.
+");
             Room crow = new Room("Cliffside", @"
+You suddenly feel stronger. Where the corpse once lay, you see a key glimmering on the ground. You put the key in the giant lock.
 With a great heave, you open the large door to reveal a cliffside, wind whipping against stone ruins long destroyed. A path of cobblestones leads to the edge of the cliff.
 you see a murder of giant crows off in the distance.");
 
